@@ -2,16 +2,16 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'Dollar.php';
 
 /**
- * Dollar$B%/%i%9$N%F%9%H%3!<%I!#(B
+ * Dollarクラスのテストコード。
  *
  * <pre>
  * ToDo
  * ====
- * - [ ] 2:1$B$N>l9g(B $5 + 10CHF = $10
+ * - [ ] 2:1の場合 $5 + 10CHF = $10
  * - [x] $5 * 2 = $10
- * - [ ] amount$B$N%W%i%$%Y!<%H2=(B
- * - [ ] Dollar$B$NI{:nMQ(B
- * - [ ] Money$B$N4]$a=hM}(B
+ * - [ ] amountのプライベート化
+ * - [ ] Dollarの副作用
+ * - [ ] Moneyの丸め処理
  * </pre>
  */
 class DollarTest extends PHPUnit_Framework_TestCase
