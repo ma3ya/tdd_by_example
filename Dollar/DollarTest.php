@@ -10,7 +10,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'Dollar.php';
  * - [ ] 2:1の場合 $5 + 10CHF = $10
  * - [x] $5 * 2 = $10
  * - [ ] amountのプライベート化
- * - [ ] Dollarの副作用
+ * - [x] Dollarの副作用
  * - [ ] Moneyの丸め処理
  * </pre>
  */
@@ -19,9 +19,9 @@ class DollarTest extends PHPUnit_Framework_TestCase
     public function testMultiplication()
     {
         $five = new Dollar(5);
-        $five->times(2);
-        $this->assertSame(10, $five->amount);
-        $five->times(3);
-        $this->assertSame(15, $five->amount);
+        $product = $five->times(2);
+        $this->assertSame(10, $product->amount);
+        $product = $five->times(3);
+        $this->assertSame(15, $product->amount);
     }
 }

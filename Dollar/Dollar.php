@@ -11,6 +11,6 @@ class Dollar
 
     public function times($multiplier)
     {
-        $this->amount *= $multiplier;
+        return new Dollar($this->amount * $multiplier);
     }
 }
