@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'Money.php';
 /**
  * Francクラス。
  *
@@ -8,10 +9,8 @@
  * コンストラクタで値を定義された後は決して変化しない。
  * </pre>
  */
-class Franc
+class Franc extends Money
 {
-    private $amount;
-
     public function __construct($amount)
     {
         $this->amount = $amount;
@@ -20,10 +19,5 @@ class Franc
     public function times($multiplier)
     {
         return new Franc($this->amount * $multiplier);
-    }
-
-    public function equals(Franc $franc)
-    {
-        return $this->amount === $franc->amount;
     }
 }
