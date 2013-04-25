@@ -31,5 +31,6 @@ class DollarTest extends PHPUnit_Framework_TestCase
     {
         $object1 = new Dollar(5);
         $this->assertTrue($object1->equals(new Dollar(5)));
+        $this->assertFalse($object1->equals(new Dollar(6)));
     }
 }
