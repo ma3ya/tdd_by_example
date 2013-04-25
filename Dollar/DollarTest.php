@@ -21,5 +21,7 @@ class DollarTest extends PHPUnit_Framework_TestCase
         $five = new Dollar(5);
         $five->times(2);
         $this->assertSame(10, $five->amount);
+        $five->times(3);
+        $this->assertSame(15, $five->amount);
     }
 }
