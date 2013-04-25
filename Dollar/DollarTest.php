@@ -13,6 +13,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'Dollar.php';
  * - [x] Dollarの副作用
  * - [ ] Moneyの丸め処理
  * - [ ] equals()
+ * - [ ] hashCode()
  * </pre>
  */
 class DollarTest extends PHPUnit_Framework_TestCase
