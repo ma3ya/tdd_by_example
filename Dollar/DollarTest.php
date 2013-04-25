@@ -14,6 +14,8 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'Dollar.php';
  * - [ ] Moneyの丸め処理
  * - [x] equals()
  * - [ ] hashCode()
+ * - [ ] nullとの等価性
+ * - [ ] オブジェクトとの等価性
  * </pre>
  */
 class DollarTest extends PHPUnit_Framework_TestCase
