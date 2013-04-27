@@ -13,14 +13,14 @@ class Dollar extends Money
 {
     protected $currency;
 
-    public function __construct($amount)
+    public function __construct($amount, $currency)
     {
         $this->amount = $amount;
-        $this->currency = "USD";
+        $this->currency = $currency;
     }
 
     public function times($multiplier)
     {
-        return new Dollar($this->amount * $multiplier);
+        return Money::dollar($this->amount * $multiplier);
     }
 }
