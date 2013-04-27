@@ -1,8 +1,15 @@
 <?php
 
-class Money
+abstract class Money
 {
     protected $amount;
+
+    public static function dollar($amount)
+    {
+        return new Dollar($amount);
+    }
+
+    abstract public function times($multiplier);
 
     public function equals(Money $money)
     {
