@@ -11,7 +11,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'Money.php';
  */
 class Franc extends Money
 {
-    private $currency;
+    protected $currency;
 
     public function __construct($amount)
     {
@@ -22,10 +22,5 @@ class Franc extends Money
     public function times($multiplier)
     {
         return new Franc($this->amount * $multiplier);
-    }
-
-    public function currency()
-    {
-        return $this->currency;
     }
 }
