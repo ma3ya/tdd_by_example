@@ -11,9 +11,12 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'Money.php';
  */
 class Dollar extends Money
 {
+    private $currency;
+
     public function __construct($amount)
     {
         $this->amount = $amount;
+        $this->currency = "USD";
     }
 
     public function times($multiplier)
@@ -23,6 +26,6 @@ class Dollar extends Money
 
     public function currency()
     {
-        return "USD";
+        return $this->currency;
     }
 }
