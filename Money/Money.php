@@ -14,6 +14,12 @@ abstract class Money
         return new Franc($amount, "CHF");
     }
 
+    public function __construct($amount, $currency)
+    {
+        $this->amount = $amount;
+        $this->currency = $currency;
+    }
+
     abstract public function times($multiplier);
 
     public function currency()
