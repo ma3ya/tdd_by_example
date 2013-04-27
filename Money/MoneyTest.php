@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'Dollar.php';
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'Franc.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'Money.php';
 
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
