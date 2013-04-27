@@ -15,3 +15,4 @@ ToDo
 - [ ] timesの一般化
 - [x] FrancとDollarの比較
 - [ ] 通貨
+- [ ] testFrancMultiplicationの削除
