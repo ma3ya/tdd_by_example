@@ -36,6 +36,11 @@ class Money
                $this->currency() === $money->currency();
     }
 
+    public function plus(Money $addend)
+    {
+        return new Money($this->amount + $addend->amount, $this->currency());
+    }
+
     public function __toString() {
         return $this->amount . " " . $this->currency;
     }
