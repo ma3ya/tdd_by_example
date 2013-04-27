@@ -9,6 +9,11 @@ abstract class Money
         return new Dollar($amount);
     }
 
+    public static function franc($amount)
+    {
+        return new Franc($amount);
+    }
+
     abstract public function times($multiplier);
 
     public function equals(Money $money)
