@@ -6,14 +6,14 @@ class MoneyTest extends PHPUnit_Framework_TestCase
 {
     public function testDollarMultiplication()
     {
-        $this->assertEquals((string)Money::dollar(10), (string)Money::dollar(5)->times(2));
-        $this->assertEquals((string)Money::dollar(15), (string)Money::dollar(5)->times(3));
+        $this->assertEquals(Money::dollar(10), Money::dollar(5)->times(2));
+        $this->assertEquals(Money::dollar(15), Money::dollar(5)->times(3));
     }
 
     public function testFrancMultiplication()
     {
-        $this->assertEquals((string)Money::franc(10), (string)Money::franc(5)->times(2));
-        $this->assertEquals((string)Money::franc(15), (string)Money::franc(5)->times(3));
+        $this->assertEquals(Money::franc(10), Money::franc(5)->times(2));
+        $this->assertEquals(Money::franc(15), Money::franc(5)->times(3));
     }
 
     public function testEquality()
