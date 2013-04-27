@@ -11,7 +11,7 @@ abstract class Money
 
     public static function franc($amount)
     {
-        return new Franc($amount);
+        return new Franc($amount, null);
     }
 
     abstract public function times($multiplier);
