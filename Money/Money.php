@@ -1,6 +1,6 @@
 <?php
 
-abstract class Money
+class Money
 {
     protected $amount;
 
@@ -20,7 +20,10 @@ abstract class Money
         $this->currency = $currency;
     }
 
-    abstract public function times($multiplier);
+    public function times($multiplier)
+    {
+        return null;
+    }
 
     public function currency()
     {
@@ -30,5 +33,9 @@ abstract class Money
     public function equals(Money $money)
     {
         return $this->amount === $money->amount && get_class($this) === get_class($money);
+    }
+
+    public function __toString() {
+        return $this->amount . " " . $this->currency;
     }
 }
