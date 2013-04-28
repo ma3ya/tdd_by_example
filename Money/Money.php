@@ -1,6 +1,7 @@
 <?php
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'Expression.php';
 
-class Money
+class Money implements Expression
 {
     protected $amount;
 
