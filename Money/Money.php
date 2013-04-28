@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'Expression.php';
 
 class Money implements Expression
 {
