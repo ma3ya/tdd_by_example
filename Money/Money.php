@@ -30,6 +30,11 @@ class Money implements Expression
         return $this->currency;
     }
 
+    public function amount()
+    {
+        return $this->amount;
+    }
+
     public function equals(Money $money)
     {
         return $this->amount === $money->amount &&
