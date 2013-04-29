@@ -16,6 +16,10 @@ class Bank
 
     public function rate($from, $to)
     {
+        if ($from === $to) {
+            return 1;
+        }
+
         $rate = $this->rates[(new Pair($from, $to))->hashCode()];
         return (int)$rate;
     }
