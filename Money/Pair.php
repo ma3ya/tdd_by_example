@@ -18,7 +18,7 @@ class Pair
 
     public function hashCode()
     {
-        return 0;
+        return hash("md5", $this->from . $this->to);
     }
 
     public function __get($key)
