@@ -4,6 +4,9 @@ ToDo
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5からMoneyの返却
 - [ ] amount()の削除
+- [x] Bank->reduce(Money)
+- [ ] 通貨交換によるMoneyの変換
+- [ ] reduce(Bank, String)
 
 - [ ] Moneyの丸め処理
 - [ ] hashCode()
