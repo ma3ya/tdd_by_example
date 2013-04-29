@@ -20,7 +20,6 @@ class Bank
             return 1;
         }
 
-        $rate = $this->rates[(new Pair($from, $to))->hashCode()];
-        return (int)$rate;
+        return (int)$this->rates[(new Pair($from, $to))->hashCode()];
     }
 }
