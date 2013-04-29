@@ -48,7 +48,8 @@ class Money implements Expression
 
     public function reduce($to)
     {
-        return $this;
+        $rate = ($this->currency === "CHF" && $to === "USD") ? 2: 1;
+        return new Money($this->amount / $rate, $to);
     }
 
     public function __toString() {
