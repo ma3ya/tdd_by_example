@@ -5,7 +5,7 @@ class Bank
     public function reduce(Expression $source, $to)
     {
         if ($source instanceof Money) {
-            return $source;
+            return $source->reduce($to);
         }
 
         $sum = $source;
